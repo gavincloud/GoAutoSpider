@@ -104,8 +104,6 @@ func dealPage(url string) {
 			//portInt, _ := strconv.Atoi(port)
 			if len(ip) != 0 && ipUtil.MathIp(ip)&& len(port) != 0&&ipUtil.MathPort(port) {
 				//ips := ip + port
-				//result := httpUtil.HttpGetProxy("https://kyfw.12306.cn/otn/leftTicket/query?leftTicketDTO.train_date=2017-08-04&leftTicketDTO.from_station=SHH&leftTicketDTO.to_station=JJS&purpose_codes=ADULT", ips)
-				//logger.Info(result)
 				logger.Info(ip, ":", port)
 			}
 		})
